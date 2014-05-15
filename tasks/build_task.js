@@ -12,7 +12,9 @@ module.exports = function(grunt) {
     'requirejs:build',
     'clean:temp',
     'build:write_revision',
-    'uglify:dest'
+    'uglify:dest',
+    'clean:apache_dir',      
+    'copy:copy_to_apache'
   ]);
   
   grunt.registerTask('build-develop', [
