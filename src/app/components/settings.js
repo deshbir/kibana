@@ -10,7 +10,7 @@ function (_) {
      * @type {Object}
      */
     var defaults = {
-      elasticsearch     : "http://"+window.location.hostname+":9200",
+      elasticsearch     : "http://"+window.location.hostname + "/search",
       panel_names       : [],
       kibana_index      : 'kibana-int',
       default_route     : '/dashboard/file/default.json'
