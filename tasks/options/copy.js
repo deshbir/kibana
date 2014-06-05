@@ -11,7 +11,7 @@ module.exports = function(config) {
           cwd: 'dist/',
           src: ['**'],         
           expand: true,
-          dest: '<%= pkg.apache_dir %>'
+          dest: '<%= pkg.deploy_dir %>'
     }
   };
 };

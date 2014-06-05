@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     'clean:temp',
     'build:write_revision',
     'uglify:dest',
-    'clean:apache_dir',      
+    'clean:deploy_dir',      
     'copy:copy_to_apache'
   ]);
   
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       'requirejs:build',
       'clean:temp',
       'build:write_revision',
-      'clean:apache_dir',      
+      'clean:deploy_dir',      
       'copy:copy_to_apache'
      
   ]);

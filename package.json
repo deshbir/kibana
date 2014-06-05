@@ -9,7 +9,7 @@
     "type": "git",
     "url": "http://github.com/elasticsearch/kibana.git"
   },
-  "apache_dir":"/var/www/html/kibana",
+  "deploy_dir":"F:/cnow-workspace/myeltanalytics/src/main/webapp/reports",
   "devDependencies": {
     "rjs-build-analysis": "0.0.3",
     "grunt": "~0.4.0",
