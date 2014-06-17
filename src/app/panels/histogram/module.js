@@ -663,7 +663,7 @@ function (angular, app, $, _, kbn, moment, timeSeries, numeral) {
                 mode: "time",
                 min: _.isUndefined(scope.range.from) ? null : scope.range.from.getTime(),
                 max: _.isUndefined(scope.range.to) ? null : scope.range.to.getTime(),
-                timeformat: time_format(scope.panel.interval),
+                timeformat: "%b-%Y",
                 label: "Datetime",
                 ticks: elem.width()/100
               },
@@ -746,20 +746,6 @@ function (angular, app, $, _, kbn, moment, timeSeries, numeral) {
           }
         }
 
-        function time_format(interval) {
-          var _int = kbn.interval_to_seconds(interval);
-          if(_int >= 2628000) {
-            return "%Y-%m";
-          }
-          if(_int >= 86400) {
-            return "%Y-%m-%d";
-          }
-          if(_int >= 60) {
-            return "%H:%M<br>%m-%d";
-          }
-
-          return "%H:%M:%S";
-        }
 
         var $tooltip = $('<div>');
         elem.bind("plothover", function (event, pos, item) {
