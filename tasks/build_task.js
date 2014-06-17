@@ -14,6 +14,19 @@ module.exports = function(grunt) {
     'build:write_revision',
     'uglify:dest'
   ]);
+  
+  grunt.registerTask('build-develop', [
+      'jshint:source',
+      'clean:on_start',
+      'less:dist',
+      'copy:almost_everything_to_temp',      
+      'requirejs:build',
+      'clean:temp',
+      'build:write_revision',
+      'clean:apache_dir',      
+      'copy:copy_to_apache'
+     
+  ]);
 
   // run a string replacement on the require config, using the latest revision number as the cache buster
   grunt.registerTask('build:write_revision', function() {

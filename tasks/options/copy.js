@@ -6,6 +6,12 @@ module.exports = function(config) {
       expand: true,
       src: ['**/*', '!**/*.less', '!test/**/*'],
       dest: '<%= tempDir %>'
+    },
+    copy_to_apache: {
+          cwd: 'dist/',
+          src: ['**'],         
+          expand: true,
+          dest: '<%= pkg.apache_dir %>'
     }
   };
 };

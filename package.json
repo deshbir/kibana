@@ -9,6 +9,7 @@
     "type": "git",
     "url": "http://github.com/elasticsearch/kibana.git"
   },
+  "apache_dir":"C:/Program Files/Apache Software Foundation/Apache2.2/htdocs/kibana",
   "devDependencies": {
     "rjs-build-analysis": "0.0.3",
     "grunt": "~0.4.0",
