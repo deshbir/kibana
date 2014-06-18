@@ -7,7 +7,7 @@ module.exports = function(config) {
       src: ['**/*', '!**/*.less', '!test/**/*'],
       dest: '<%= tempDir %>'
     },
-    copy_to_apache: {
+    copy_to_deploy_dir: {
           cwd: 'dist/',
           src: ['**'],         
           expand: true,

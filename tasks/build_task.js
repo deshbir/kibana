@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     'build:write_revision',
     'uglify:dest',
     'clean:deploy_dir',      
-    'copy:copy_to_apache'
+    'copy:copy_to_deploy_dir'
   ]);
   
   grunt.registerTask('build-develop', [
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
       'clean:temp',
       'build:write_revision',
       'clean:deploy_dir',      
-      'copy:copy_to_apache'
+      'copy:copy_to_deploy_dir'
      
   ]);
 
