@@ -1,5 +1,5 @@
 {
-  "title": "All Access Codes",
+  "title": "Registrations FY11",
   "services": {
     "query": {
       "list": {
@@ -33,8 +33,8 @@
   },
   "rows": [
     {
-      "title": "Row1",
-      "height": "250px",
+      "title": "",
+      "height": "100px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
@@ -61,91 +61,52 @@
               2
             ]
           },
-          "title": "Total"
-        },
-        {
-          "span": 12,
-          "editable": true,
-          "type": "histogram",
-          "loadingEditor": false,
-          "mode": "count",
-          "time_field": "dateCreated",
-          "value_field": null,
-          "x-axis": true,
-          "y-axis": true,
-          "scale": 1,
-          "y_format": "none",
-          "grid": {
-            "max": null,
-            "min": 0
-          },
-          "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "annotate": {
-            "enable": false,
-            "query": "*",
-            "size": 20,
-            "field": "_type",
-            "sort": [
-              "_score",
-              "desc"
-            ]
-          },
-          "auto_int": false,
-          "resolution": 100,
-          "interval": "30d",
-          "intervals": [
-            "auto",
-            "1s",
-            "1m",
-            "5m",
-            "10m",
-            "30m",
-            "1h",
-            "3h",
-            "12h",
-            "1d",
-            "1w",
-            "1y"
-          ],
-          "lines": false,
-          "fill": 0,
-          "linewidth": 3,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": true,
-          "spyable": true,
-          "zoomlinks": true,
-          "options": true,
-          "legend": true,
-          "show_query": true,
-          "interactive": true,
-          "legend_counts": true,
-          "timezone": "browser",
-          "percentage": false,
-          "zerofill": true,
-          "derivative": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "query_as_alias": true
-          },
-          "title": "Access Codes activated VS Time"
+          "title": "Total New Registrations"
         }
       ],
       "notice": false
     },
     {
-      "title": "Row1.1",
+      "title": "Row1",
       "height": "250px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
       "panels": [
+        {
+          "error": false,
+          "span": 6,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "region",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "12pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "table",
+          "counter_pos": "above",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0,
+              2
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Region"
+        },
         {
           "error": false,
           "span": 6,
@@ -159,13 +120,13 @@
           "size": 10,
           "order": "count",
           "style": {
-            "font-size": "10pt"
+            "font-size": "12pt"
           },
           "donut": false,
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "pie",
+          "chart": "table",
           "counter_pos": "above",
           "spyable": true,
           "queries": {
@@ -178,85 +139,18 @@
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "by learning model"
-        },
-        {
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "terms",
-          "loadingEditor": false,
-          "field": "institution.name",
-          "exclude": [],
-          "missing": true,
-          "other": true,
-          "size": 10,
-          "order": "count",
-          "style": {
-            "font-size": "10pt"
-          },
-          "donut": false,
-          "tilt": false,
-          "labels": true,
-          "arrangement": "horizontal",
-          "chart": "bar",
-          "counter_pos": "above",
-          "spyable": true,
-          "queries": {
-            "mode": "all",
-            "ids": [
-              0,
-              2
-            ]
-          },
-          "tmode": "terms",
-          "tstat": "total",
-          "valuefield": "",
-          "title": "By Institution"
+          "title": "Learning Model"
         }
       ],
       "notice": false
     },
     {
-      "title": "Row2",
+      "title": "",
       "height": "250px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
       "panels": [
-        {
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "terms",
-          "loadingEditor": false,
-          "field": "accessCode.productName",
-          "exclude": [],
-          "missing": false,
-          "other": false,
-          "size": 10,
-          "order": "count",
-          "style": {
-            "font-size": "10pt"
-          },
-          "donut": false,
-          "tilt": false,
-          "labels": true,
-          "arrangement": "horizontal",
-          "chart": "bar",
-          "counter_pos": "above",
-          "spyable": true,
-          "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "tmode": "terms",
-          "tstat": "total",
-          "valuefield": "",
-          "title": "By Product"
-        },
         {
           "error": false,
           "span": 6,
@@ -270,13 +164,13 @@
           "size": 10,
           "order": "count",
           "style": {
-            "font-size": "10pt"
+            "font-size": "12pt"
           },
           "donut": false,
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "pie",
+          "chart": "table",
           "counter_pos": "above",
           "spyable": true,
           "queries": {
@@ -289,40 +183,41 @@
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "By Discipline"
-        }
-      ],
-      "notice": false
-    },
-    {
-      "title": "Row3",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "collapsable": true,
-      "panels": [
+          "title": "Product"
+        },
         {
           "error": false,
-          "span": 12,
+          "span": 6,
           "editable": true,
-          "type": "map",
+          "type": "terms",
           "loadingEditor": false,
-          "map": "world",
-          "colors": [
-            "#A0E2E2",
-            "#265656"
-          ],
-          "size": 100,
+          "field": "country.name",
           "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "12pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "table",
+          "counter_pos": "above",
           "spyable": true,
           "queries": {
-            "mode": "unpinned",
+            "mode": "all",
             "ids": [
-              0
+              0,
+              2
             ]
           },
-          "title": "by country",
-          "field": "country.code"
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Country"
         }
       ],
       "notice": false
@@ -354,11 +249,11 @@
           },
           "overflow": "min-height",
           "fields": [
-            "accessCode.code",
-            "accessCode.productName",
-            "accessCode.productCode",
-            "accessCode.discipline",
-            "accessCode.dateCreated"
+            "name",
+            "email",
+            "institution.id",
+            "institution.name",
+            "userType"
           ],
           "highlight": [],
           "sortable": true,
@@ -376,7 +271,7 @@
           "status": "Stable",
           "trimFactor": 300,
           "normTimes": true,
-          "title": "Records",
+          "title": "User Records",
           "all_fields": false,
           "localTime": false,
           "timeField": "@timestamp"
@@ -389,10 +284,10 @@
   "index": {
     "interval": "none",
     "pattern": "[logstash-]YYYY.MM.DD",
-    "default": "accesscodes_all",
+    "default": "users_fy11",
     "warm_fields": true
   },
-  "style": "light",
+  "style": "dark",
   "failover": false,
   "panel_hints": true,
   "loader": {

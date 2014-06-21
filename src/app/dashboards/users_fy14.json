@@ -1,5 +1,5 @@
 {
-  "title": "Access Codes by Product",
+  "title": "Registrations FY14",
   "services": {
     "query": {
       "list": {
@@ -33,8 +33,8 @@
   },
   "rows": [
     {
-      "title": "Row1",
-      "height": "250px",
+      "title": "",
+      "height": "100px",
       "editable": true,
       "collapse": false,
       "collapsable": true,
@@ -42,81 +42,32 @@
         {
           "span": 12,
           "editable": true,
-          "type": "histogram",
+          "type": "hits",
           "loadingEditor": false,
-          "mode": "count",
-          "time_field": "dateCreated",
-          "value_field": null,
-          "x-axis": true,
-          "y-axis": true,
-          "scale": 1,
-          "y_format": "none",
-          "grid": {
-            "max": null,
-            "min": 0
+          "style": {
+            "font-size": "32pt"
           },
-          "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "annotate": {
-            "enable": false,
-            "query": "*",
-            "size": 20,
-            "field": "_type",
-            "sort": [
-              "_score",
-              "desc"
-            ]
-          },
-          "auto_int": false,
-          "resolution": 100,
-          "interval": "30d",
-          "intervals": [
-            "auto",
-            "1s",
-            "1m",
-            "5m",
-            "10m",
-            "30m",
-            "1h",
-            "3h",
-            "12h",
-            "1d",
-            "1w",
-            "1y"
-          ],
-          "lines": false,
-          "fill": 0,
-          "linewidth": 3,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": true,
+          "arrangement": "horizontal",
+          "chart": "total",
+          "counter_pos": "above",
+          "donut": false,
+          "tilt": false,
+          "labels": true,
           "spyable": true,
-          "zoomlinks": true,
-          "options": true,
-          "legend": true,
-          "show_query": true,
-          "interactive": true,
-          "legend_counts": true,
-          "timezone": "browser",
-          "percentage": false,
-          "zerofill": true,
-          "derivative": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "query_as_alias": true
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0,
+              2
+            ]
           },
-          "title": "Access Codes activated VS Time"
+          "title": "Total New Registrations"
         }
       ],
       "notice": false
     },
     {
-      "title": "Row2",
+      "title": "Row1",
       "height": "250px",
       "editable": true,
       "collapse": false,
@@ -128,33 +79,78 @@
           "editable": true,
           "type": "terms",
           "loadingEditor": false,
-          "field": "accessCode.productName",
+          "field": "region",
           "exclude": [],
           "missing": false,
           "other": false,
           "size": 10,
           "order": "count",
           "style": {
-            "font-size": "10pt"
+            "font-size": "12pt"
           },
           "donut": false,
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "bar",
+          "chart": "table",
           "counter_pos": "above",
           "spyable": true,
           "queries": {
-            "mode": "unpinned",
+            "mode": "all",
             "ids": [
-              0
+              0,
+              2
             ]
           },
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "Access Codes By Product"
+          "title": "Region"
         },
+        {
+          "error": false,
+          "span": 6,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "studentType",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "12pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "table",
+          "counter_pos": "above",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0,
+              2
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Learning Model"
+        }
+      ],
+      "notice": false
+    },
+    {
+      "title": "",
+      "height": "250px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
         {
           "error": false,
           "span": 6,
@@ -168,13 +164,13 @@
           "size": 10,
           "order": "count",
           "style": {
-            "font-size": "10pt"
+            "font-size": "12pt"
           },
           "donut": false,
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "pie",
+          "chart": "table",
           "counter_pos": "above",
           "spyable": true,
           "queries": {
@@ -187,7 +183,98 @@
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "Access Codes By Discipline"
+          "title": "Product"
+        },
+        {
+          "error": false,
+          "span": 6,
+          "editable": true,
+          "type": "terms",
+          "loadingEditor": false,
+          "field": "country.name",
+          "exclude": [],
+          "missing": false,
+          "other": false,
+          "size": 10,
+          "order": "count",
+          "style": {
+            "font-size": "12pt"
+          },
+          "donut": false,
+          "tilt": false,
+          "labels": true,
+          "arrangement": "horizontal",
+          "chart": "table",
+          "counter_pos": "above",
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0,
+              2
+            ]
+          },
+          "tmode": "terms",
+          "tstat": "total",
+          "valuefield": "",
+          "title": "Country"
+        }
+      ],
+      "notice": false
+    },
+    {
+      "title": "Events",
+      "height": "650px",
+      "editable": true,
+      "collapse": false,
+      "collapsable": true,
+      "panels": [
+        {
+          "error": false,
+          "span": 12,
+          "editable": true,
+          "group": [
+            "default"
+          ],
+          "type": "table",
+          "size": 100,
+          "pages": 5,
+          "offset": 0,
+          "sort": [
+            "_score",
+            "desc"
+          ],
+          "style": {
+            "font-size": "9pt"
+          },
+          "overflow": "min-height",
+          "fields": [
+            "name",
+            "email",
+            "institution.id",
+            "institution.name",
+            "userType"
+          ],
+          "highlight": [],
+          "sortable": true,
+          "header": true,
+          "paging": true,
+          "spyable": true,
+          "queries": {
+            "mode": "all",
+            "ids": [
+              0,
+              2
+            ]
+          },
+          "field_list": true,
+          "status": "Stable",
+          "trimFactor": 300,
+          "normTimes": true,
+          "title": "User Records",
+          "all_fields": false,
+          "localTime": false,
+          "timeField": "@timestamp"
         }
       ],
       "notice": false
@@ -197,10 +284,10 @@
   "index": {
     "interval": "none",
     "pattern": "[logstash-]YYYY.MM.DD",
-    "default": "accesscodes_all",
+    "default": "users_fy14",
     "warm_fields": true
   },
-  "style": "light",
+  "style": "dark",
   "failover": false,
   "panel_hints": true,
   "loader": {
@@ -220,7 +307,7 @@
   "pulldowns": [
     {
       "type": "query",
-      "collapse": false,
+      "collapse": true,
       "notice": false,
       "query": "*",
       "pinned": true,
