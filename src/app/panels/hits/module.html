@@ -35,8 +35,8 @@
 
   <div ng-show="panel.chart == 'total'">
     <!-- COMPRO CHANGE: Adding formatting for total hits if panel.numberFormat is true  -->
-    <div ng-if="panel.numberFormat" ng-style="panel.style" style="line-height:{{panel.style['font-size']}}">{{1000000 | number}}</div>
-    <div ng-if="!panel.numberFormat" ng-style="panel.style" style="line-height:{{panel.style['font-size']}}">{{1000000}}</div>
+    <div ng-if="panel.numberFormat" ng-style="panel.style" style="line-height:{{panel.style['font-size']}}">{{hits | number}}</div>
+    <div ng-if="!panel.numberFormat" ng-style="panel.style" style="line-height:{{panel.style['font-size']}}">{{hits}}</div>
   </div>
 
   <span ng-show="panel.chart == 'list'">
