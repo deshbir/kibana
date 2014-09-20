@@ -1,5 +1,5 @@
 {
-  "title": "CAPES Users",
+  "title": "CAPES Accounts",
   "services": {
     "query": {
       "list": {
@@ -138,7 +138,7 @@
             "value_type": "cumulative",
             "query_as_alias": true
           },
-          "title": "New Users added VS Time"
+          "title": "Accounts Created VS Time"
         }
       ],
       "notice": false
@@ -149,44 +149,10 @@
       "editable": false,
       "collapse": false,
       "collapsable": false,
-      "panels": [
+      "panels": [        
         {
           "error": false,
-          "span": 6,
-          "editable": false,
-          "draggable":false,
-          "type": "terms",
-          "loadingEditor": false,
-          "field": "studentType",
-          "exclude": [],
-          "missing": false,
-          "other": false,
-          "size": 10,
-          "order": "count",
-          "style": {
-            "font-size": "10pt"
-          },
-          "donut": false,
-          "tilt": false,
-          "labels": true,
-          "arrangement": "horizontal",
-          "chart": "pie",
-          "counter_pos": "above",
-          "spyable": false,
-          "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "tmode": "terms",
-          "tstat": "total",
-          "valuefield": "",
-          "title": "By learning model"
-        },
-        {
-          "error": false,
-          "span": 6,
+          "span": 12,
           "editable": false,
           "draggable":false,
           "type": "terms",
@@ -236,7 +202,7 @@
           "draggable":false,
           "type": "terms",
           "loadingEditor": false,
-          "field": "accessCode.productName",
+          "field": "region",
           "exclude": [],
           "missing": false,
           "other": false,
@@ -249,19 +215,20 @@
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "bar",
+          "chart": "pie",
           "counter_pos": "above",
           "spyable": false,
           "queries": {
-            "mode": "unpinned",
+            "mode": "all",
             "ids": [
-              0
+              0,
+              2
             ]
           },
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "By Product"
+          "title": "By Region"
         },
         {
           "error": false,
@@ -331,7 +298,7 @@
           },
           "title": "by country",
           "field": "country.code"
-        }
+        }       
       ],
       "notice": false
     },
@@ -351,7 +318,7 @@
             "default"
           ],
           "type": "table",
-          "fixedColumns":true,
+          "fixedColumns":false,
           "size": 100,
           "pages": 5,
           "offset": 0,

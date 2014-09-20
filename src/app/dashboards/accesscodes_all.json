@@ -236,7 +236,7 @@
           "draggable":false,
           "type": "terms",
           "loadingEditor": false,
-          "field": "accessCode.productName",
+          "field": "region",
           "exclude": [],
           "missing": false,
           "other": false,
@@ -249,19 +249,20 @@
           "tilt": false,
           "labels": true,
           "arrangement": "horizontal",
-          "chart": "bar",
+          "chart": "pie",
           "counter_pos": "above",
           "spyable": false,
           "queries": {
-            "mode": "unpinned",
+            "mode": "all",
             "ids": [
-              0
+              0,
+              2
             ]
           },
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "By Product"
+          "title": "By Region"
         },
         {
           "error": false,
@@ -307,7 +308,7 @@
       "editable": false,
       "collapse": false,
       "collapsable": false,
-      "panels": [
+      "panels": [       
         {
           "error": false,
           "span": 12,
@@ -351,7 +352,7 @@
             "default"
           ],
           "type": "table",
-          "fixedColumns":true,
+          "fixedColumns":false,
           "size": 100,
           "pages": 5,
           "offset": 0,

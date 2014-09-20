@@ -1,5 +1,5 @@
 {
-  "title": "SEVEN Users",
+  "title": "SEVEN Accounts",
   "services": {
     "query": {
       "list": {
@@ -138,26 +138,26 @@
             "value_type": "cumulative",
             "query_as_alias": true
           },
-          "title": "New Users added VS Time"
+          "title": "Accounts Created VS Time"
         }
       ],
       "notice": false
-    },
+    },   
     {
-      "title": "Options",
-      "height": "280px",
+      "title": "Row2",
+      "height": "250px",
       "editable": false,
       "collapse": false,
       "collapsable": false,
       "panels": [
-        {
+         {
           "error": false,
           "span": 6,
           "editable": false,
           "draggable":false,
           "type": "terms",
           "loadingEditor": false,
-          "field": "studentType",
+          "field": "region",
           "exclude": [],
           "missing": false,
           "other": false,
@@ -174,40 +174,6 @@
           "counter_pos": "above",
           "spyable": false,
           "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "tmode": "terms",
-          "tstat": "total",
-          "valuefield": "",
-          "title": "By learning model"
-        },
-        {
-          "error": false,
-          "span": 6,
-          "editable": false,
-          "draggable":false,
-          "type": "terms",
-          "loadingEditor": false,
-          "field": "institution.name",
-          "exclude": [],
-          "missing": false,
-          "other": false,
-          "size": 10,
-          "order": "count",
-          "style": {
-            "font-size": "10pt"
-          },
-          "donut": false,
-          "tilt": false,
-          "labels": true,
-          "arrangement": "horizontal",
-          "chart": "bar",
-          "counter_pos": "above",
-          "spyable": false,
-          "queries": {
             "mode": "all",
             "ids": [
               0,
@@ -217,51 +183,7 @@
           "tmode": "terms",
           "tstat": "total",
           "valuefield": "",
-          "title": "By Institution"
-        }
-      ],
-      "notice": false
-    },
-    {
-      "title": "Row2",
-      "height": "250px",
-      "editable": false,
-      "collapse": false,
-      "collapsable": false,
-      "panels": [
-        {
-          "error": false,
-          "span": 6,
-          "editable": false,
-          "draggable":false,
-          "type": "terms",
-          "loadingEditor": false,
-          "field": "accessCode.productName",
-          "exclude": [],
-          "missing": false,
-          "other": false,
-          "size": 10,
-          "order": "count",
-          "style": {
-            "font-size": "10pt"
-          },
-          "donut": false,
-          "tilt": false,
-          "labels": true,
-          "arrangement": "horizontal",
-          "chart": "bar",
-          "counter_pos": "above",
-          "spyable": false,
-          "queries": {
-            "mode": "unpinned",
-            "ids": [
-              0
-            ]
-          },
-          "tmode": "terms",
-          "tstat": "total",
-          "valuefield": "",
-          "title": "By Product"
+          "title": "By Region"
         },
         {
           "error": false,
@@ -351,7 +273,7 @@
             "default"
           ],
           "type": "table",
-          "fixedColumns":true,
+          "fixedColumns":false,
           "size": 100,
           "pages": 5,
           "offset": 0,
